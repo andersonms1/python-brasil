@@ -1,0 +1,9 @@
+classes e objetos
+strings
+arquivos
+
+regular expression
+graphical interface
+database access
+
+django
