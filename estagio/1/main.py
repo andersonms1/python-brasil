@@ -50,7 +50,7 @@ while counter < 7:
 
         # text = copy
 
-        print(copy.center(text_size ), end='')
+        print(copy.center(git ), end='')
         print(' *')
 
 
