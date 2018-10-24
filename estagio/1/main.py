@@ -52,7 +52,7 @@ while counter < 8:
 
         # text = copy
 
-        print(copy.center(text_size ), end='')
+        print(copy.center(git ), end='')
         print(' *')
         had_print = False
 
