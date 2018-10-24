@@ -2,6 +2,7 @@ field_size = 40
 text_size = 36
 counter = 0
 had_print = False
+last_char = 0
 
 
 f = open('texto.txt', 'r')
@@ -13,7 +14,7 @@ for line in range(field_size):
 print()
 
 
-while counter < 7:
+while counter < 8:
 
     if had_print == True:
         # Do nothing
@@ -24,14 +25,15 @@ while counter < 7:
     if counter == 0:
         text = f.readline(text_size + 1)
     else:
-        text = f.readline(text_size + 1)
+        text = f.readline(text_size  - len(text[last_char: -1]))
 
     if text[len(text) -1] == ' ':
-        print('First if')
+
         for char in range(len(text) - 1):
             print(text[char], end='')
-            print(' *', end='\n')
             had_print = False
+
+        print(' **', end='\n')
 
     else:
 
@@ -52,7 +54,7 @@ while counter < 7:
 
         print(copy.center(text_size ), end='')
         print(' *')
-
+        had_print = False
 
         if len(text[last_char: -1]) > 0:
             print('*', end=' ')
