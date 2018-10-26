@@ -1,0 +1,14 @@
+bola
+mochila
+caderno
+lapis
+borracha
+apagador
+pincel
+estojo
+telescopio
+escopeta
+sombrinha
+celular
+tablet
+computador

@@ -3,12 +3,8 @@ aux = ''
 counter = len(name) 
 lista = []
 
-while counter > 0:
-    print(name[:-counter], end='')
+while counter >= 0:
+    print(name[:counter], end='')
     print()
     counter = counter - 1
 
-for l in name:
-    lista.append(l)
-
-print(lista) 
